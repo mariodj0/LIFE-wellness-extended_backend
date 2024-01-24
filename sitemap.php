@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitemap - LIFE</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
 </head>
 <body>
 <header>
     <div class="logo">
-        <p><a href="./index.php"><img src="./images/logo.png" alt="LIFE Logo">Living It Fully Everyday!</a></p>
+        <p><a href="./index.php"><img src="./assets/logo.png" alt="LIFE Logo">Living It Fully Everyday!</a></p>
         
     </div>
     <nav>
@@ -63,7 +63,7 @@
             
             <h3>About LIFE</h3>
             <p>Empowering your wellness journey with online yoga, meditation, and more.</p>
-            <img src="./images/logo.png" alt="LIFE Logo" class="footer-logo">
+            <img src="./assets/logo.png" alt="LIFE Logo" class="footer-logo">
             
         </div>
         <div class="quick-links">

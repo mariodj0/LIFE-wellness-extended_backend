@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19 Resources - LIFE</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
 </head>
 <body>
     <header>
         <div class="logo">
-            <p><a href="./index.php"><img src="./images/logo.png" alt="LIFE Logo">Living It Fully Everyday!</a></p>
+            <p><a href="./index.php"><img src="./assets/logo.png" alt="LIFE Logo">Living It Fully Everyday!</a></p>
             
         </div>
         <nav>
@@ -52,7 +52,7 @@
 
         <section class="safety-guidelines">
             <h2>Safety Guidelines</h2>
-            <img src="./images/covid-overview.gif" alt="People wearing mask" class="covid-img">
+            <img src="./assets/covid-overview.gif" alt="People wearing mask" class="covid-img">
             <p>Following safety guidelines is vital in preventing the spread of COVID-19. Key measures include:</p>
             <ul>
                 <li>Regular hand washing with soap and water or using an alcohol-based hand sanitizer.</li>
@@ -105,7 +105,7 @@
                 
                 <h3>About LIFE</h3>
                 <p>Empowering your wellness journey with online yoga, meditation, and more.</p>
-                <img src="./images/logo.png" alt="LIFE Logo" class="footer-logo">
+                <img src="./assets/logo.png" alt="LIFE Logo" class="footer-logo">
                 
             </div>
             <div class="quick-links">

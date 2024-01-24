@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIFE - Living It Fully Everyday</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
 </head>
 <body>
 <header>
     <div class="logo">
-        <p><a href="./index.php"><img src="./images/logo.png" alt="LIFE Logo">Living It Fully Everyday!</a></p>
+        <p><a href="./index.php"><img src="./assets/logo.png" alt="LIFE Logo">Living It Fully Everyday!</a></p>
         
     </div>
     <nav>
@@ -55,25 +55,25 @@
     
             <div class="service-box">
                 <h3><a href="./services.php#yoga" class="service-link">Yoga</a></h3>
-                <img src="./images/yoga.gif" alt="Yoga">
+                <img src="./assets/yoga.gif" alt="Yoga">
                 <p>Explore the balance of mind and body through our tailored Yoga sessions.</p>
             </div>
 
 
             <div class="service-box">
                 <h3><a href="./services.php#meditation" class="service-link">Meditation</a></h3>
-                <img src="./images/meditation.gif" alt="Meditation">
+                <img src="./assets/meditation.gif" alt="Meditation">
                 
                 <p>Explore mindfulness and mental clarity with guided meditation.</p>
             </div>
             <div class="service-box">
                 <h3><a href="./services.php#healthy-habits" class="service-link">Healthy Habits</a></h3>
-                <img src="./images/healthy-habits.gif" alt="Healthy Habits">
+                <img src="./assets/healthy-habits.gif" alt="Healthy Habits">
                 <p>Learn sustainable habits for a healthier lifestyle.</p>
             </div>
             <div class="service-box">
                 <h3><a href="./services.php#stretching" class="service-link">Stretching</a></h3>
-                <img src="./images/stretching.gif" alt="Stretching">
+                <img src="./assets/stretching.gif" alt="Stretching">
                 <p>Improve flexibility and reduce muscle tension with our stretching routines.</p>
             </div>
         </section>
@@ -87,15 +87,15 @@
         <br>
         <p>Our team comprises certified and experienced professionals in yoga, meditation, and lifestyle coaching. We believe in personalized care, ensuring each member receives guidance that resonates with their individual journey. Our online sessions are not just classes; they're experiences crafted to bring balance, clarity, and harmony into your life.</p>
             <div class="about-us-images">
-                <img src="./images/team-photo.jpg" alt="Our Dedicated Team" />
-                <img src="./images/yoga-session.jpg" alt="Yoga Session at LIFE" />
-                <img src="./images/tranquil-landscape.jpg" alt="Tranquil Landscape" />
+                <img src="./assets/team-photo.jpg" alt="Our Dedicated Team" />
+                <img src="./assets/yoga-session.jpg" alt="Yoga Session at LIFE" />
+                <img src="./assets/tranquil-landscape.jpg" alt="Tranquil Landscape" />
             </div>
             <br>
             <br>
             <p>Incorporating our philosophy of holistic health, we believe in the power of balancing the mind, body, and spirit. We invite you to join our community and explore the path to a healthier and more fulfilling life.</p>
             <br>
-        <img id="about-logo" src="./images/logo.png" alt="About LIFE" />
+        <img id="about-logo" src="./assets/logo.png" alt="About LIFE" />
     </section>
 
   
@@ -106,7 +106,7 @@
             
             <h3>About LIFE</h3>
             <p>Empowering your wellness journey with online yoga, meditation, and more.</p>
-            <img src="./images/logo.png" alt="LIFE Logo" class="footer-logo">
+            <img src="./assets/logo.png" alt="LIFE Logo" class="footer-logo">
             
         </div>
         <div class="quick-links">
