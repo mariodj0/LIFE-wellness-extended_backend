@@ -1,0 +1,927 @@
+/* Main home page and general styles.css */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; 
+    background: #104c32ee; 
+}
+
+
+header {
+    background-color: #f5faf6; 
+    position: fixed;
+    width: 100%;
+    
+}
+
+.logo {
+    float: left;
+    padding: 2px 15px;
+    
+}
+
+
+
+.logo a {
+    text-decoration: none; 
+    color: #333; 
+    transition: color 0.3s ease; 
+}
+
+
+.logo a:hover {
+    color: #006400; 
+}
+
+.logo img {
+    height: 40px;
+    float: left;
+    
+}
+
+nav {
+    float: right;
+    font-size: 1.1em;
+}
+
+nav ul {
+    margin: 10px;
+    padding: 1px;
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    
+}
+
+nav ul li {
+    padding: 10px 30px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #006400; 
+}
+
+
+
+/* Services Navigation Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover {
+    background-color: #f9f9f9; 
+}
+
+/* Main content styles */
+main {
+    padding-top: 60px; 
+}
+
+.hero {
+    background: url('./images/pexels.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    margin-top: auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+
+
+.hero button {
+    font-size: 1.2em;
+    padding: 15px 25px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #004d00; 
+}
+
+
+
+.welcome-message {
+    background-color: #f0f4f8; 
+    padding: 10px;
+    margin-top: 0px; 
+    text-align: center;
+}
+
+.welcome-message p {
+    width: 70%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-area {
+    display: grid;
+    grid-template-columns: repeat(2fr, 2fr); 
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.service-link {
+    text-decoration: underline;
+    color: inherit; 
+    transition: color 0.3s ease;
+}
+
+.service-link:hover {
+    color: #006400; 
+}
+
+
+
+.services {
+    background-color: #fff; 
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-top: 20px; 
+    text-align: center; 
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.services h2 {
+    color: #104c32; 
+    margin-bottom: 20px;
+}
+
+
+.services h2, .services p {
+    grid-column: span 2; 
+    text-align: center; 
+}
+
+
+
+.services .service-box {
+    background-color: #f5faf6; 
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.services .service-box img {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px; 
+    margin-bottom: 15px; 
+}
+
+
+
+
+#about-us {
+    background-color: #ffffff;
+    
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-us h2 {
+    color: #104c32;
+    font-size: 2em;
+}
+
+.about-us-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.about-us-images img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#about-logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#about-us p {
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #304437;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+
+    
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; 
+    
+}
+
+
+.footer-container ul {
+    list-style-type: none;
+    padding-left: 0; 
+    margin: 0; 
+}
+
+.footer-container li {
+    font-size: 0.9em; 
+    text-align: left; 
+}
+
+.footer-container a {
+    color: white; 
+    text-decoration: underline;
+    
+}
+
+.footer-container a:hover {
+    text-decoration: underline; 
+}
+
+
+.footer-container .about p,
+.footer-container .contact-info p {
+    font-size: 0.9em; 
+     
+}
+
+
+
+.footer-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+
+.about {
+    grid-column: 1; 
+    text-align: left; 
+    ;
+}
+
+.contact-info {
+    grid-column: 4;
+    text-align: right; 
+    
+}
+
+footer a {
+    color: white; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    color: #9a9191; 
+    text-decoration: underline; 
+}
+
+/*  footer bottom styles */
+
+.footer-bottom {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    text-align: center; 
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #fff; 
+    grid-column: 1 / -1; 
+    font-size: 0.9em;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-bottom p {
+    margin: 5px 0; 
+    
+}
+
+.footer-bottom p a{
+    margin: 5px 0; 
+    text-decoration: underline;
+    
+}
+
+.footer-bottom a:hover {
+    color: #9a9191; 
+    text-decoration: underline;
+}
+
+.footer-bottom p:nth-child(1) {
+    grid-column: 1; 
+    text-align: left; 
+}
+
+.footer-bottom p:nth-child(2) {
+    grid-column: 2; 
+    
+}
+
+.footer-bottom p:nth-child(3) {
+    grid-column: 3; 
+    text-align: right; 
+}
+
+
+
+/* COVID-19 Page Styles */
+
+.covid-overview h1 {
+    
+    color: #104c32;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 5px;
+
+    
+}
+
+.covid-img {
+    width: 30%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 5px auto;
+    border-radius: 2px; 
+}
+
+
+.covid-overview {
+
+    background-color: #f5faf6; 
+    padding: 20px; 
+    margin: 20px ; 
+    line-height: 1.5; 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.safety-guidelines, .covid-stats, .mental-health, .external-resources {
+    background-color: #fff; 
+    padding: 30px; 
+    margin: 20px 0; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    line-height: 1.5; 
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.covid-overview h2, .safety-guidelines h2, .covid-stats h2, .mental-health h2, .external-resources h2 {
+    color: #104c32; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    font-size: 1.5em; 
+}
+
+.covid-overview p, .safety-guidelines p, .covid-stats p, .mental-health p, .external-resources p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.covid-overview ul, .safety-guidelines ul, .covid-stats ul, .mental-health ul, .external-resources ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.covid-overview a, .safety-guidelines a, .covid-stats a, .mental-health a, .external-resources a {
+    color: #006400; 
+    text-decoration: none; 
+}
+
+.covid-overview a:hover, .safety-guidelines a:hover, .covid-stats a:hover, .mental-health a:hover, .external-resources a:hover {
+    text-decoration: underline; 
+}
+
+
+@media (max-width: 768px) {
+    .covid-img {
+        max-width: 100%; 
+    }
+
+    .covid-overview, .safety-guidelines, .covid-stats, .mental-health, .external-resources {
+        padding: 20px;
+        margin: 15px 0;
+    }
+}
+
+
+/* Services Page styles */
+
+
+.services-page main h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #104c32; 
+    
+}
+
+
+.services-page #services-description {
+    background-color: #f5faf6; 
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    border-radius: 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.services-page #services-description p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-page section p {
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.services-page #services-description ul {
+    list-style-type: disc; 
+    padding: 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-page #services-description li {
+    margin-bottom: 10px;
+}
+
+
+.services-page section {
+    background-color: #ffffff; 
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-page section h2 {
+    color: #104c32;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.services-page section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+}
+
+.services-page section iframe {
+    display: block;
+    margin: 20px auto; 
+}
+
+
+
+.services-page section li {
+    margin-bottom: 8px;
+    list-style-type: disc; 
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+
+}
+
+
+.services-page .join-session {
+    display: block;
+    width: max-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.services-page .join-session:hover {
+    background-color: #367c39;
+}
+
+
+.services-page #upcoming-events {
+    background-color: #e0f2f1; 
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+
+/* Registration Page styles*/
+.registration-form {
+    background: #f5faf6;
+    padding: 20px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+.registration-form label, .registration-form input, .registration-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.registration-form button {
+    margin-top: 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 15px 25px; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-size: 1em; 
+    text-align: center; 
+}
+
+.registration-form button:hover {
+    background-color: #367c39; 
+}
+
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+}
+
+
+.registration-header {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #333; 
+
+    background-color: #f5faf6; 
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.registration-header h1 {
+    font-size: 2.5em; 
+    color: #104c32; 
+    margin-bottom: 10px;
+}
+
+.registration-header p {
+    font-size: 1em;
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+
+
+.membership-fee {
+    background-color: #f5faf6; 
+    padding: 20px;
+    margin: 20px auto;
+    
+    text-align: center; 
+    max-width: 600px; 
+}
+
+.membership-fee h3 {
+    color: #104c32; 
+    margin-bottom: 10px;
+}
+
+#membershipFee {
+    font-size: 1.2em;
+    color: #333; 
+}
+
+
+
+
+
+/* Privacy Policy Page  Styles */
+.privacy-policy {
+    background-color: #fff; 
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.privacy-policy h1 {
+    color: #104c32; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.privacy-policy h2 {
+    color: #104c32; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.privacy-policy p {
+    line-height: 1.6; 
+    color: #333; 
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .privacy-policy {
+        padding: 15px;
+        margin: 10px auto;
+    }
+}
+
+
+/* Sitemap Page Styles */
+.sitemap {
+    background-color: #ffffff; 
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    text-align: center; 
+}
+
+.sitemap h1 {
+    color: #104c32; 
+    margin-bottom: 10px;
+}
+
+.sitemap p {
+    margin-bottom: 20px;
+}
+
+.sitemap ul {
+    list-style-type: none; 
+    padding: 0;
+    text-align: left; 
+}
+
+.sitemap ul li {
+    margin-bottom: 10px;
+}
+
+.sitemap ul li a {
+    color: #006400; 
+    text-decoration: none; 
+}
+
+.sitemap ul li a:hover {
+    text-decoration: underline; 
+}
+
+
+.sitemap ul li ul {
+    padding-left: 20px; 
+}
+
+.sitemap ul li ul li {
+    list-style-type: disc; 
+    margin-bottom: 5px; 
+    font-size: 0.9em; 
+}
+
+@media (max-width: 768px) {
+    .sitemap {
+        padding: 15px;
+        margin: 10px auto;
+        width: 90%; 
+    }
+}
+
+
+
+/* Contact Page Styles */
+.contact-header {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f5faf6;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-header h1 {
+    font-size: 2.5em;
+    color: #104c32;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.contact-header p {
+    font-size: 1em;
+    color: #333;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-details, .message-form, .feedback {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: 60%;
+    max-width: 800px;
+}
+
+.contact-details h2, .message-form h2, .feedback h2 {
+    color: #104c32;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-details p, .message-form form, .feedback form {
+    font-size: 1em;
+    color: #333;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-details p, .feedback p {
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-details a {
+    color: #006400;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.message-form label, .feedback label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.message-form input[type="text"],
+.message-form input[type="email"],
+.message-form textarea,
+.feedback textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.message-form button, .feedback button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message-form button:hover, .feedback button:hover {
+    background-color: #367c39;
+}
+
+
+@media (max-width: 768px) {
+    .contact-header, .contact-details, .message-form, .feedback {
+        width: 90%;
+        padding: 15px;
+    }
+}
