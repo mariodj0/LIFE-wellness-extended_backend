@@ -3,7 +3,7 @@
 ## Assignment Details
 - **Course Name**: Web programming COSC3052
 - **Institution**: RMIT University
-- **Submission Date**: 14th January 2024
+- **Submission Date**: 28th January 2024
 - **Student Name**: Mario Kweku Djameh
 - **Student ID**: s3917002
 - **live link**: `https://titan.csit.rmit.edu.au/~s3917002/wp/a2/index.php`
@@ -21,7 +21,7 @@ The primary goal of this project is to apply Human-Computer Interaction (HCI) pr
 
 
 ## Installation and Setup
-The website is live at `https://titan.csit.rmit.edu.au/~s3917002/wp/a1/index.php`
+The website is live at `https://titan.csit.rmit.edu.au/~s3917002/wp/a2/index.php`
 
 ## Website Overview
 The LIFE website includes several key sections:
@@ -34,13 +34,13 @@ The LIFE website includes several key sections:
 - **Privacyr**: Privacy policy page that lets users know how the website deals with personally identifiable information.
 
 ## Structure
-- `index.html`: The main landing page of the website.
-- `services.html`: Details of the wellness services offered.
-- `covid.html`: Dedicated page for COVID-19 resources.
-- `contact.html`: Contact and feedback form.
-- `register.html`: User registration form.
-- `privacy.html`: Privacy policy page.
-- `sitemap.html`: Sitemap of the website.
+- `index.php`: The main landing page of the website.
+- `services.php`: Details of the wellness services offered.
+- `covid.php`: Dedicated page for COVID-19 resources.
+- `contact.php`: Contact and feedback form.
+- `register.php`: User registration form.
+- `privacy.php`: Privacy policy page.
+- `sitemap.php`: Sitemap of the website.
 - `styles.css`: Stylesheet for the website.
 - `validate.js`: JavaScript file for form validation.
 

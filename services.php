@@ -13,25 +13,25 @@
 <body class="services-page">
     <header>
         <div class="logo">
-            <p><a href="./index.html"><img src="./images/logo.png" alt="LIFE Logo">Living It Fully Everyday!</a></p>
+            <p><a href="./index.php"><img src="./images/logo.png" alt="LIFE Logo">Living It Fully Everyday!</a></p>
             
         </div>
         <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.php">Home</a></li>
                 <li class="dropdown">
-                    <a href="./services.html">Services</a>
+                    <a href="./services.php">Services</a>
                     <ul class="dropdown-content">
-                        <li><a href="./services.html#yoga">Yoga</a></li>
-                        <li><a href="./services.html#meditation">Meditation</a></li>
-                        <li><a href="./services.html#healthy-habits">Healthy Habits</a></li>
-                         <li><a href="./services.html#stretching">Stretching</a></li>
+                        <li><a href="./services.php#yoga">Yoga</a></li>
+                        <li><a href="./services.php#meditation">Meditation</a></li>
+                        <li><a href="./services.php#healthy-habits">Healthy Habits</a></li>
+                         <li><a href="./services.php#stretching">Stretching</a></li>
                     </ul>
                 </li>
-                <li><a href="./covid.html">COVID-19 Resources</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
-                <li><a href="./sitemap.html">Sitemap</a></li>
-                <li><a href="./register.html" class="register-link">Register</a></li>
+                <li><a href="./covid.php">COVID-19 Resources</a></li>
+                <li><a href="./contact.php">Contact Us</a></li>
+                <li><a href="./sitemap.php">Sitemap</a></li>
+                <li><a href="./register.php" class="register-link">Register</a></li>
             </ul>
         </nav>
     </header>
@@ -62,7 +62,7 @@
             </ul>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Vr3h5X9kmUo?si=9xtCAY_ojG4ZG0sD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-            <a href="./register.html" class="join-session">Join Yoga Session</a>
+            <a href="./register.php" class="join-session">Join Yoga Session</a>
         </section>
 
         <!-- Meditation Section -->
@@ -76,7 +76,7 @@
             </ul>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/vj0JDwQLof4?si=953EfYwY0V4M37HC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-            <a href="./register.html" class="join-session">Join Meditation Session</a>
+            <a href="./register.php" class="join-session">Join Meditation Session</a>
         </section>
 
         <!-- Healthy Habits Section -->
@@ -90,7 +90,7 @@
             </ul>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/G7dgGxJPd-c?si=OFIQ0AlMI8rB5ogJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-            <a href="./register.html" class="join-session">Join Healthy Habits Session</a>
+            <a href="./register.php" class="join-session">Join Healthy Habits Session</a>
   
         </section>
 
@@ -106,7 +106,7 @@
             </ul>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FI51zRzgIe4?si=DDRUjQhAA3Mf9fNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-            <a href="./register.html" class="join-session">Join Stretching Session</a>
+            <a href="./register.php" class="join-session">Join Stretching Session</a>
         </section>
 
         <!-- Upcoming Events Section -->
@@ -136,21 +136,21 @@
             <div class="quick-links">
                 <h3>Browse</h3>
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./covid.html">COVID-19 Resources</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                    <li><a href="./sitemap.html">Sitemap</a></li>
-                    <li><a href="./register.html" class="register-link">Register</a></li>
+                    <li><a href="./index.php">Home</a></li>
+                    <li><a href="./services.php">Services</a></li>
+                    <li><a href="./covid.php">COVID-19 Resources</a></li>
+                    <li><a href="./contact.php">Contact Us</a></li>
+                    <li><a href="./sitemap.php">Sitemap</a></li>
+                    <li><a href="./register.php" class="register-link">Register</a></li>
                 </ul>
             </div>
             <div class="covid-resources">
-                <h3> <a href="./covid.html">COVID-19 Resources</a> </h3>
+                <h3> <a href="./covid.php">COVID-19 Resources</a> </h3>
                 <ul>
                     <li><a href="https://health.gov.au/health-topics/novel-coronavirus-2019-ncov">Australian Government Department of Health</a></li>
                     <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">World Health Organization: COVID-19 Pandemic</a></li>
                     <li><a href="https://www.mentalhealth.gov/">MentalHealth.gov</a></li>
-                    <li><a href="./covid.html">Get more resources here</a></li>
+                    <li><a href="./covid.php">Get more resources here</a></li>
     
                 </ul>
             </div>
@@ -164,7 +164,7 @@
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Living It Fully Everyday. All rights reserved.</p>
-            <p><a href="./privacy.html">Privacy Policy</a></p>
+            <p><a href="./privacy.php">Privacy Policy</a></p>
             <p>Designed by Mario </p>
         </div>
     </footer>
