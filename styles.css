@@ -113,7 +113,7 @@ main {
 }
 
 .hero {
-    background: url('./images/pexels.jpg') no-repeat center center;
+    background: url('./assets/pexels.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
