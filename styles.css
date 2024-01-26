@@ -710,11 +710,25 @@ footer a:hover {
 }
 
 
+/* for error span in register page*/
 .error {
     color: red;
     font-size: 0.8em;
     display: none;
 }
+
+.error-input {
+    border-color: red;
+}
+
+.visible-error {
+    display: block;
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+
 
 
 .registration-header {
@@ -969,5 +983,85 @@ footer a:hover {
     .contact-header, .contact-details, .message-form, .feedback {
         width: 90%;
         padding: 15px;
+    }
+}
+
+
+
+/* Welcome Message page Styles */
+
+.welcome-message {
+    background-color: #f5faf6;
+    padding: 20px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.welcome-message h1 {
+    color: #104c32;
+    margin-bottom: 20px;
+}
+
+.welcome-message p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.welcome-message ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.welcome-message li {
+    margin-bottom: 5px;
+}
+
+/* Login Button for welcome page Styles */
+.login-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.login-button:hover {
+    background-color: #367c39;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .welcome-message {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .welcome-message h1 {
+        font-size: 1.8em;
+    }
+
+    .welcome-message p, .welcome-message ul {
+        width: 100%;
+    }
+
+    .welcome-message li {
+        font-size: 0.9em;
+    }
+
+    .login-button {
+        padding: 8px 12px;
+        font-size: 0.9em;
     }
 }
