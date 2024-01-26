@@ -7,11 +7,24 @@ body {
     background: #104c32ee; 
 }
 
+main {
+    padding-top: 60px; 
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 80px; 
+    }
+}
+
 
 header {
     background-color: #f5faf6; 
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 100;
     
 }
 
@@ -69,6 +82,39 @@ nav a {
 nav a:hover {
     color: #006400; 
 }
+
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .logo, nav {
+        width: 100%;
+        float: none;
+        display: block; 
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0 auto;
+        display: block; 
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        padding: 5px; 
+    }
+
+    nav a {
+        display: block; 
+    }
+}
+
+
 
 
 
