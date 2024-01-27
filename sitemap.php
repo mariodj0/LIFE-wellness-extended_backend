@@ -30,7 +30,8 @@ require_once('includes/header_nav.php');
             <li><a href="./contact.php">Contact Us</a></li>
             <li><a href="./register.php">Register</a></li>
             <li><a href="./privacy.php">Privacy Policy</a></li>
-            
+            <li><a href="./myServices.php">My Services</a></li>
+            <li><a href="./login.php">Login</a></li>
         </ul>
     </section>
 </main>

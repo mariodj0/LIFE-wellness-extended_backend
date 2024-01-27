@@ -16,6 +16,8 @@
                 <li><a href="./contact.php">Contact Us</a></li>
                 <li><a href="./sitemap.php">Sitemap</a></li>
                 <li><a href="./register.php" class="register-link">Register</a></li>
+                <li><a href="./myServices.php">My Services</a></li>
+                <li><a href="./login.php">Login</a></li>
             </ul>
         </div>
         <div class="covid-resources">
@@ -42,3 +44,5 @@
         <p>Designed by Mario </p>
     </div>
 </footer>
+
+<script src="js/adjustMainPadding.js"></script>

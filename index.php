@@ -21,7 +21,7 @@ require_once('includes/header_nav.php');
         <button onclick="location.href='./services.php'">Discover Your Path to Wellness</button>
     </section>
 
-    <section class="welcome-message">
+    <section class="welcome-message-hero">
         <h2>Welcome to Healing and Growth with LIFE - Living It Fully Everyday</h2>
         <p>As we emerge from the pandemic, LIFE is here to support your journey towards mental and emotional wellbeing. Our online wellness services are designed to help you manage stress, find inner peace, and build healthy habits for a fulfilling life.</p>
     </section>
@@ -119,14 +119,8 @@ require_once('includes/header_nav.php');
 require_once('includes/footer.php'); 
 ?>
 
-
-
 <!-- Accordion JS Widget setup-->
 <script src="js/accordion_setup.js"></script>
-
-
-
-
 
 </body>
 </html>
