@@ -32,14 +32,40 @@ require_once('includes/header_nav.php');
         <h2>Your Dashboard</h2>
         <p>Quick access to your favorite services and recent activities.</p>
         <div class="dashboard-items">
+    
+            <!-- Yoga Icon -->
             <div class="item">
-                <h3>Your Activity Log</h3>
-                <p>Review your recent wellness activities and progress.</p>
+                <a href="yoga_service.php">
+                    <img src="./assets/yoga_icon.png" alt="woman Yoga pose icon">
+                    <h3>Yoga</h3>
+                </a>
+                <p>Select your Yoga level and preferences.</p>
             </div>
+            <!-- Meditation Icon -->
             <div class="item">
-                <h3>Upcoming Appointments</h3>
-                <p>See your scheduled sessions and manage appointments.</p>
+                <a href="meditation_service.php">
+                    <img src="./assets/meditation_icon.png" alt="woman in Meditation pose">
+                    <h3>Meditation</h3>
+                </a>
+                <p>Choose the type of meditation that suits you.</p>
             </div>
+            <!-- Stretching Icon -->
+            <div class="item">
+                <a href="stretching_service.php">
+                    <img src="./assets/stretching_icon.png" alt="woman Stretching">
+                    <h3>Stretching</h3>
+                </a>
+                <p>Customize your stretching routine.</p>
+            </div>
+            <!-- Healthy Habits Icon -->
+            <div class="item">
+                <a href="healthy_habits_service.php">
+                    <img src="./assets/healthy_icon.png" alt="healthy food">
+                    <h3>Healthy Habits</h3>
+                </a>
+                <p>Develop and track your healthy habits.</p>
+            </div>
+
         </div>
     </section>
 

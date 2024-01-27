@@ -1204,6 +1204,14 @@ footer a:hover {
     gap: 20px;
 }
 
+/* Media query for larger screens */
+@media (min-width: 800px) { /* Adjust 500px to your needs */
+    .dashboard-items, .offers, .service-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 .item, .offer, .service-item {
     background-color: #f5faf6;
     padding: 15px;
@@ -1238,3 +1246,54 @@ footer a:hover {
         width: 90%;
     }
 }
+
+
+/* style for myservice page icons and title */
+
+.item a, .item a:visited { 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.item h3 {
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.5em; 
+    color: #333; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    margin-top: 15px; 
+    text-align: center; 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); 
+}
+
+.item img {
+    width: 80px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 20px; 
+    padding-top: 10px;
+    
+}
+
+/* Hover and Active state for the anchor tag */
+.item a:hover h3,
+.item a:active h3 {
+    text-decoration: underline;
+    text-decoration-color: blue; 
+}
+
+
+
+
+
+/* Responsive adjustments  for  icon and title*/
+@media (max-width: 768px) {
+    .item h3 {
+        font-size: 1.2em; 
+    }
+
+    .item img {
+        width: 60px; 
+    }
+}
+

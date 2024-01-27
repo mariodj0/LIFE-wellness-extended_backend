@@ -63,6 +63,7 @@ All images and GIFs used on this website are sourced from [Pexels](https://www.p
 
 Logo design was generated from stable diffusion. 
 Logo icons and code snippet for head for webite was from [Favican](https://favicon.io/)
+Icons for the myservices.php page was from [flaticon.com](https://www.flaticon.com/free-icons/yoga) Yoga icons created by monkik - Flaticon
 
 ### Code Snippets
 For HTML, CSS, and JavaScript code snippets, the following resources were referenced:
