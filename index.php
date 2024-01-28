@@ -2,31 +2,33 @@
 <html lang="en">
     
 <?php 
+// Set the page title and include the common head elements.
 $pageTitle = "LIFE - Living It Fully Everyday";
 require_once('includes/head.php'); 
 ?>
 
-
 <body>
 
 <?php 
+// Include the navigation header.
 require_once('includes/header_nav.php'); 
 ?>
 
-
 <main>
+    <!-- Hero section with a welcoming message and a button to navigate to the services page -->
     <section class="hero">
         <h1>Welcome to LIFE</h1>
         <p>Start your journey towards healing and wellness in the post-COVID era.</p>
         <button onclick="location.href='./services.php'">Discover Your Path to Wellness</button>
     </section>
 
+    <!-- Welcome message section with a detailed introduction to the services offered -->
     <section class="welcome-message-hero">
         <h2>Welcome to Healing and Growth with LIFE - Living It Fully Everyday</h2>
         <p>As we emerge from the pandemic, LIFE is here to support your journey towards mental and emotional wellbeing. Our online wellness services are designed to help you manage stress, find inner peace, and build healthy habits for a fulfilling life.</p>
     </section>
 
-            <!-- Accordion JS Widget -->
+    <!-- Accordion JavaScript Widget for displaying different service categories -->
     <ul id="my-accordion" class="accordionjs">
         <!-- Yoga Services -->
         <li>
@@ -61,23 +63,23 @@ require_once('includes/header_nav.php');
         </li>
     </ul>
 
-
+    <!-- Section showcasing various online wellness services -->
     <div class="content-area">
         <section class="services">
             <h2>Our Online Wellness Services</h2>
             <p>Explore our range of online wellness services designed for your mental and physical health.</p>
     
+            <!-- Individual service boxes with links and images -->
+            <!-- Each service box includes a title, image, and a brief description -->
             <div class="service-box">
                 <h3><a href="./services.php#yoga" class="service-link">Yoga</a></h3>
                 <img src="./assets/yoga.gif" alt="Yoga">
                 <p>Explore the balance of mind and body through our tailored Yoga sessions.</p>
             </div>
 
-
             <div class="service-box">
                 <h3><a href="./services.php#meditation" class="service-link">Meditation</a></h3>
                 <img src="./assets/meditation.gif" alt="Meditation">
-                
                 <p>Explore mindfulness and mental clarity with guided meditation.</p>
             </div>
             <div class="service-box">
@@ -92,9 +94,9 @@ require_once('includes/header_nav.php');
             </div>
         </section>
 
-       
     </div>
 
+    <!-- About Us section with a detailed description and images -->
     <section id="about-us">
         <h2>About Us</h2>
         <p>At LIFE, our mission is to inspire and support personal growth and wellness. Founded by wellness experts, we offer a range of services and resources aimed at enhancing mental, physical, and emotional well-being. </p>
@@ -112,14 +114,14 @@ require_once('includes/header_nav.php');
         <img id="about-logo" src="./assets/logo.png" alt="About LIFE" />
     </section>
 
-  
 </main>
 
 <?php 
+// Include the footer file.
 require_once('includes/footer.php'); 
 ?>
 
-<!-- Accordion JS Widget setup-->
+<!-- JavaScript for the Accordion Widget -->
 <script src="js/accordion_setup.js"></script>
 
 </body>

@@ -6,34 +6,44 @@
 - **Submission Date**: 28th January 2024
 - **Student Name**: Mario Kweku Djameh
 - **Student ID**: s3917002
-- **live link**: `https://titan.csit.rmit.edu.au/~s3917002/wp/a2/index.php`
+- **live link 1**: `https://titan.csit.rmit.edu.au/~s3917002/wp/a2/index.php`
+- **live link 2**: `https://titan.csit.rmit.edu.au/~s1234567/wp/a2/admin/portal.php`
 
-
-## Assignment Details And Overview
-This project is part of Web programming COSC3052, focusing on web development skills such as HTML, CSS, JavaScript, and accessibility design.
+## Overview
+Assignment 2 of Web Programming COSC3052 at RMIT University builds upon the LIFE Wellness website from Assignment 1. This iteration focuses on enhancing the website's functionality through PHP backend integration, database management, session handling, and improved user interactivity.
 
 ## Project Description
-The LIFE Wellness website is designed to promote mental health and wellness. 
-"LIFE - Living It Fully Everyday" is a digital wellness website designed as part of Web programming COSC3052 at RMIT University. This project website is made for a fictional local council to provide online wellness services, including Yoga, Meditation, Stretching, and Healthy Habits, especially relevant in the post-COVID-19 era.
+The LIFE Wellness website, "LIFE - Living It Fully Everyday", now incorporates dynamic features such as user authentication, session management, form processing, and database interactions. The project continues to provide online wellness services like Yoga, Meditation, Stretching, and Healthy Habits, tailored to the needs of users in the post-COVID-19 era.
+
+
+
 
 ## Objective
-The primary goal of this project is to apply Human-Computer Interaction (HCI) principles to create an intuitive, user-friendly, and accessible website. The project focuses on client-side web development, incorporating responsive web design, form validation, and interactive elements to enhance user experience.
+The primary objective of Assignment 2 is to integrate backend technologies with the existing client-side interface. The focus is on:
+- Implementing user authentication and session management.
+- Creating dynamic and interactive web pages using PHP.
+- Managing user data with MySQL database.
+- Ensuring data security and privacy.
 
 
 ## Installation and Setup
-The website is live at `https://titan.csit.rmit.edu.au/~s3917002/wp/a2/index.php`
+The website is live at `https://titan.csit.rmit.edu.au/~s3917002/wp/a2/index.php` and at `https://titan.csit.rmit.edu.au/~s1234567/wp/a2/admin/portal.php` for the admin dashboard
 
 ## Website Overview
-The LIFE website includes several key sections:
-- **Home Page**: Introduces users to LIFE and its mission, with quick access to different wellness services.
-- **Services**: Detailed information on offered services like Yoga, Meditation, Stretching, and Healthy Habits.
-- **COVID-19 Resources**: A dedicated section providing valuable resources and information related to COVID-19.
-- **Contact Us**: A page for users to get in touch with the LIFE team.
-- **Sitemap**: An overview of the website's structure.
-- **Register**: A registration form for new members to sign up for services.
-- **Privacyr**: Privacy policy page that lets users know how the website deals with personally identifiable information.
+In addition to the features from assignment 1, The LIFE website now includes several key features:
+- **User Registration and Login**: Secure registration and login functionality for users.
+- **Dynamic Content Rendering**: Displaying content based on user interactions and database queries.
+- **Personalized User Experience**: Customized content in 'My Services' based on user preferences.
+- **Contact Form Processing**: Backend handling of contact form submissions.
+- **Database Interaction**: Storing and retrieving user and service data from MySQL database.
+
 
 ## Structure
+- `db_access.php`: Database connection and configuration.
+- `login.php`, `register.php`: Authentication and user registration handling.
+- `logout_process.php`: Session termination and user logout logic.
+- `contact_process.php`: Backend processing of the contact form.
+- `backend/`: Directory containing backend scripts and database interactions.
 - `index.php`: The main landing page of the website.
 - `services.php`: Details of the wellness services offered.
 - `covid.php`: Dedicated page for COVID-19 resources.
@@ -46,14 +56,19 @@ The LIFE website includes several key sections:
 
 
 ## Technologies Used
+- PHP
+- MySQL
 - HTML5
 - CSS3
-- JavaScript (for form validation and interactivity)
+- JavaScript
+- JQuery
+-Bootstrap
 
 ## Development Process
-1. **Planning and Design**: Initial concept development, wireframing, and layout design.
-2. **Implementation**: Writing HTML, CSS, and JavaScript code to bring the design to life.
-3. **Feedback and Iteration**: Incorporating feedback from family to refine the website.
+1. **Backend Development**: Implementing PHP scripts for dynamic content and user management.
+2. **Database Integration**: Designing and setting up a MySQL database to store user and service data.
+3. **Security Measures**: Ensuring secure data handling and user authentication.
+4. **Testing and Debugging**: Rigorous testing to ensure functionality and data integrity.
 
 
 
@@ -61,9 +76,14 @@ The LIFE website includes several key sections:
 ### Images and GIFs
 All images and GIFs used on this website are sourced from [Pexels](https://www.pexels.com/), which allows free use for personal purposes.
 
-Logo design was generated from stable diffusion. 
+Website Logo design was generated from stable diffusion. 
+
 Logo icons and code snippet for head for webite was from [Favican](https://favicon.io/)
-Icons for the myservices.php page was from [flaticon.com](https://www.flaticon.com/free-icons/yoga) Yoga icons created by monkik - Flaticon
+
+Icons for the myServices.php page was from [flaticon.com](https://www.flaticon.com/free-icons/yoga) Yoga icons created by monkik - Flaticon
+
+Accordion JS Plugin from [accordion.js.org](https://accordion.js.org/)by [Andrei Surdu(awps)] 
+
 
 ### Code Snippets
 For HTML, CSS, and JavaScript code snippets, the following resources were referenced:
@@ -71,9 +91,55 @@ For HTML, CSS, and JavaScript code snippets, the following resources were refere
 - [W3Schools](https://www.w3schools.com/)
 - [Stack Overflow](https://stackoverflow.com/)
 - [CSS Tricks](https://css-tricks.com/)
-- Course notes and lab material by lecturer Liam Pietralla
+- [PHP Documentation](https://www.php.net/docs.php)
+- Course notes and lab material by lecturer Liam Pietralla and tutor Man 
+
+## Acknowledgements
+Special thanks to RMIT University, course lecturer Liam Pietralla,  tutor Man and various online communities for resources and support in the development of this project.
 
 
+## Files and structure of the website
 
-
-
+LIFE Wellness Website
+|
+|-- index.php                   # Main landing page of the website
+|-- services.php                # Details of the wellness services offered
+|-- covid.php                   # Dedicated page for COVID-19 resources
+|-- contact.php                 # Contact and feedback form
+|-- register.php                # User registration form
+|-- login.php                   # User login page
+|-- privacy.php                 # Privacy policy page
+|-- sitemap.php                 # Sitemap of the website
+|-- styles.css                  # Main stylesheet for the website
+|-- README.md                   # Project documentation and overview
+|-- healthy_service.php         # Page for healthy habits service
+|-- meditation_service.php      # Page for meditation service
+|-- myServices.php              # Personalized services page for registered users
+|-- stretching_service.php      # Page for stretching service
+|-- welcome.php                 # Welcome page post-registration
+|-- yoga_service.php            # Page for yoga service
+|
+|-- includes/                   # Folder containing reusable PHP include files
+|   |-- footer.php              # Footer include file
+|   |-- head.php                # Head include file
+|   |-- header_nav.php          # Header and navigation include file
+|
+|-- js/                         # Folder containing JavaScript files
+|   |-- accordion_setup.js      # JavaScript for accordion setup
+|   |-- adjustMainPadding.js    # JavaScript for adjusting main padding
+|
+|-- plugin/                     # Folder containing external plugins
+|   |-- accordion.css           # CSS styles for the accordion plugin
+|   |-- accordion.js            # JavaScript for the accordion functionality
+|
+|-- backend/                    # Folder containing backend PHP scripts
+|   |-- db_access.php           # Database access and configuration
+|   |-- logout_process.php      # Script for handling user logout
+|   |-- register_process.php    # Script for handling user registration
+|   |-- login_process.php       # Script for handling user login
+|
+|-- admin/                      # Folder for admin-related files
+|   |-- portal.php              # Admin portal page
+|
+|-- assets/                     # Folder containing all media, images, and icons
+|   |-- [All media files, images, icons, etc.]

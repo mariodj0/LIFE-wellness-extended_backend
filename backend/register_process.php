@@ -1,5 +1,7 @@
 <?php
+// Start a new session.
 session_start();
+// Include the database access script to connect to the database.
 require_once 'db_access.php';
 
 // Function to sanitize user input
@@ -7,18 +9,18 @@ function sanitizeInput($data) {
     return htmlspecialchars(stripslashes(trim($data)));
 }
 
-// Function to validate name format
+// Function to validate names format with regex
 function validateName($name) {
     return preg_match('/^[a-zA-Z\s\-]+$/', $name);
 }
 
 
-// Function to validate Australian mobile numbers
+// Function to validate Australian mobile numbers with regex
 function validatePhoneNumber($number) {
     return preg_match('/^\+61\s?4\d{2}\s?\d{3}\s?\d{3}$/', $number);
 }
 
-// Function to validate password format
+// Function to validate password format with regex
 function validatePassword($password) {
     return preg_match('/^[A-Z][\w\-]{6,}[0-9]$/', $password);
 }
@@ -54,12 +56,12 @@ $_SESSION['registration_errors'] = [];
 
 // Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Sanitize and assign form data
+    // Sanitize and store form data
     foreach ($_POST as $key => $value) {
         $_SESSION['user_input'][$key] = sanitizeInput($value);
     }
 
-    // Extract sanitized input for ease of use
+    // Extract sanitized input for further processing
     $email = $_SESSION['user_input']['email'];
     $confirm_email = $_SESSION['user_input']['confirmEmail'];
     $password = $_SESSION['user_input']['password'];
@@ -74,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-    // Validate input data and populate errors
+    // Validate input data and populate errors array if any errors
 
     if (!validateName($first_name)) {
         $_SESSION['registration_errors']['firstName'] = 'Invalid first name format. Only letters, spaces, and hyphens are allowed.';
@@ -102,9 +104,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($age < 16 || $age > 120) {
         $_SESSION['registration_errors']['age'] = 'Invalid age or you must be at least 16 years old to register';
     }
-    // ... other validations ...
 
-    // Proceed if no errors
+    // Proceed if there are no validation errors
     if (count($_SESSION['registration_errors']) === 0) {
         // Calculate membership fee
         $membershipFee = calculateMembershipFee($age, $is_student, $is_employed);
@@ -115,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $pdo->prepare("INSERT INTO `user` (email, password, first_name, last_name, phone, age, is_student, is_employed) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
             $stmt->execute([$email, $password, $first_name, $last_name, $phone, $age, $is_student, $is_employed]);
 
-            // Set session variables for success message and membership fee
+            // Set success message and user details in the session.
             $_SESSION['success_message'] = 'Registration successful!';
             $_SESSION['membership_fee'] = $membershipFee;
             $_SESSION['user_details'] = [
@@ -126,18 +127,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'age' => $age,
                 'is_student' => $is_student,
                 'is_employed' => $is_employed
-
-                
-                // Add other details as needed
             ];
             
 
-            // Redirect to login page on successful registration
+            // Redirect to welcome page on successful registration
             header('Location: /~s3917002/wp/a2/welcome.php');
             exit();
         } catch (PDOException $e) {
-            // Handle database errors
-            // Check for duplicate email entry
+            // Handle database errors including duplicate email entry
             if ($e->errorInfo[1] == 1062) {
                 $_SESSION['registration_errors']['email'] = 'This email has already been used. Please choose another email.';
             } else {
@@ -147,7 +144,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Redirect back to registration form on error
+    // Redirect back to registration form with errors
     header('Location: /~s3917002/wp/a2/register.php');
     exit();
 }

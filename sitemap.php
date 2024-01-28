@@ -2,6 +2,7 @@
 <html lang="en">
 
 <?php 
+// Set the page title and include the head component.
 $pageTitle = "Sitemap - LIFE";
 require_once('includes/head.php'); 
 ?>
@@ -9,16 +10,20 @@ require_once('includes/head.php');
 <body>
     
 <?php 
+// Include the navigation header of the website.
 require_once('includes/header_nav.php'); 
 ?>
 
 <main>
+    <!-- Sitemap Section -->
     <section class="sitemap">
         <h1>LIFE Website Sitemap</h1>
         <p>Explore the various pages on our site:</p>
         <ul>
+            <!-- List of main pages available on the website with links -->
             <li><a href="./index.php">Home</a></li>
             <li><a href="./services.php">Services</a>
+                <!-- Nested list for specific services under the Services page -->
                 <ul>
                     <li><a href="./services.php#yoga">Yoga</a></li>
                     <li><a href="./services.php#meditation">Meditation</a></li>
@@ -37,6 +42,7 @@ require_once('includes/header_nav.php');
 </main>
 
 <?php 
+// Include the footer file.
 require_once('includes/footer.php'); 
 ?>
 

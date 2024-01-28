@@ -1,32 +1,30 @@
 <?php
 
-ini_set('display_errors', 1);  // Show errors for debugging (remove this line when website on teaching server)
-error_reporting(E_ALL); // Show all possible errors (remove this line when website on teaching server)
-
+// These lines are for debugging purposes.
+//ini_set('display_errors', 1);  // Show errors for debugging
+//error_reporting(E_ALL); // Show all possible errors
 
 // Database connection details
 $servername = "rmit.australiaeast.cloudapp.azure.com";
-$username = "s3917002_wp_a2"; // Replace with your database username
-$password = "s3917002"; // Replace with your database password
-$dbname = "s3917002_wp_a2"; // Replace with your database name
+$username = "s3917002_wp_a2"; 
+$password = "s3917002"; 
+$dbname = "s3917002_wp_a2"; 
 
-// DSN (Data Source Name) for MySQL connection
+// DSN (Data Source Name) string for MySQL connection
 $dsn = "mysql:host=$servername;dbname=$dbname;charset=utf8mb4";
 
-// Options for PDO
+// Options for the PDO connection
 $options = [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // turn on errors in the form of exceptions
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // make the default fetch be an associative array
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // Enable exceptions for errors
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // Set default fetch mode to associative array
 ];
 
 try {
-    // Creating a PDO instance and connecting to the database
+    // Attempt to create a new PDO instance and connect to the database.
+    // The PDO instance is stored in the $pdo variable.
     $pdo = new PDO($dsn, $username, $password, $options);
 } catch (PDOException $e) {
-    // Catch and display any connection errors
+    // If connection fails, catch the error and terminate the script with a message.
     die("Connection failed: " . $e->getMessage());
 }
-
-// You can now use $pdo to perform database operations throughout your application
-
 ?>

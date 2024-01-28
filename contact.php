@@ -2,6 +2,7 @@
 <html lang="en">
 
 <?php 
+// Set the page title and include the header file.
 $pageTitle = "Contact Us - LIFE";
 require_once('includes/head.php'); 
 ?>
@@ -9,15 +10,18 @@ require_once('includes/head.php');
 <body>
     
 <?php 
+// Include the navigation header.
 require_once('includes/header_nav.php'); 
 ?>
 
 <main>
+    <!-- Contact header section with title and introductory text -->
     <section class="contact-header">
         <h1>Contact LIFE</h1>
         <p>Reach out to us for any inquiries, feedback, or just to say hello!</p>
     </section>
 
+    <!-- Contact details section with email, phone, address, and social media links -->
     <section class="contact-details">
         <h2>Get in Touch</h2>
         <p>Email: <a href="mailto:LIFE@localcouncil.com">LIFE@localcouncil.com</a></p>
@@ -30,6 +34,7 @@ require_once('includes/header_nav.php');
         </p>
     </section>
 
+    <!-- Form for sending a direct message -->
     <section class="message-form">
         <h2>Send Us a Message</h2>
         <form action="mailto:LIFE@localcouncil.com" method="post" enctype="text/plain">
@@ -46,6 +51,7 @@ require_once('includes/header_nav.php');
         </form>
     </section>
 
+    <!-- Feedback form section -->
     <section class="feedback">
         <h2>Feedback</h2>
         <p>Your feedback is valuable to us. Please let us know how we can improve.</p>
@@ -59,6 +65,7 @@ require_once('includes/header_nav.php');
 </main>
 
 <?php 
+// Include the footer file.
 require_once('includes/footer.php'); 
 ?>
 

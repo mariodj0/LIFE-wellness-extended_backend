@@ -9,11 +9,13 @@
     <link rel="manifest" href="./assets/site.webmanifest">
 
     <?php
+    // Conditionally include additional resources for the 'index.php' page
     if (basename($_SERVER['PHP_SELF']) == 'index.php') {
-
+        // Comments about the Accordion JS Plugin
         echo '<!-- Accordion JS Plugin by [Andrei Surdu(awps)] -->';
         echo '<!-- More information at https://accordion.js.org/ and https://github.com/awps/Accordion.JS -->';
 
+        // Include styles and scripts for the Accordion plugin
         echo '<link rel="stylesheet" href="plugin/accordion.css" />';
         echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>';
         echo '<script src="plugin/accordion.js"></script>';
