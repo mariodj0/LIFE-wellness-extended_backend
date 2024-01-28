@@ -62,7 +62,7 @@ In addition to the features from assignment 1, The LIFE website now includes sev
 - CSS3
 - JavaScript
 - JQuery
--Bootstrap
+- Bootstrap
 
 ## Development Process
 1. **Backend Development**: Implementing PHP scripts for dynamic content and user management.
@@ -92,15 +92,16 @@ For HTML, CSS, and JavaScript code snippets, the following resources were refere
 - [Stack Overflow](https://stackoverflow.com/)
 - [CSS Tricks](https://css-tricks.com/)
 - [PHP Documentation](https://www.php.net/docs.php)
-- Course notes and lab material by lecturer Liam Pietralla and tutor Man 
+- Course notes and lab material by lecturer Liam Pietralla and tutor Man Hou
 
 ## Acknowledgements
-Special thanks to RMIT University, course lecturer Liam Pietralla,  tutor Man and various online communities for resources and support in the development of this project.
+Special thanks to RMIT University, course lecturer Liam Pietralla,  tutor Man Hou and various online communities for resources and support in the development of this project.
 
 
 ## Files and structure of the website
 
-LIFE Wellness Website
+```
+LIFE Wellness Website structure and files 
 |
 |-- index.php                   # Main landing page of the website
 |-- services.php                # Details of the wellness services offered
@@ -143,3 +144,4 @@ LIFE Wellness Website
 |
 |-- assets/                     # Folder containing all media, images, and icons
 |   |-- [All media files, images, icons, etc.]
+```
