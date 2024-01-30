@@ -50,23 +50,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['user_employed'] = $user['is_employed'];
 
                 // Redirect to myServices page after successful login.
-                header('Location: /~s3917002/wp/a2/myServices.php');
+                header('Location: ../myServices.php');
                 exit();
             } else {
                 // If credentials are incorrect, set an error message.
                 $_SESSION['login_errors']['login'] = 'Invalid email or password. Please try again.';
-                header('Location: /~s3917002/wp/a2/login.php');
+                header('Location: ../login.php');
                 exit();
             }
         } catch (PDOException $e) {
             // Handle any PDO exceptions during database interaction.
             $_SESSION['login_errors']['database'] = 'Database error: ' . $e->getMessage();
-            header('Location: /~s3917002/wp/a2/login.php');
+            header('Location: ../login.php');
             exit();
         }
     } else {
         // If there are input errors, redirect back to the login page with errors.
-        header('Location: /~s3917002/wp/a2/login.php');
+        header('Location: ../login.php');
         exit();
     }
 }

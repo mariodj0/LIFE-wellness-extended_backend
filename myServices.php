@@ -3,11 +3,17 @@
 <?php
 // Start session management and check if the user is logged in.
 session_start();
+
+require_once 'backend/myservice_process.php';
+
 if (!isset($_SESSION['user_email'])) {
     // Redirect to the login page if the user is not logged in.
     header('Location: login.php');
     exit();
 }
+
+// Fetch all services details
+$serviceDetails = getAllServices();
 ?>
 
 <?php 
@@ -15,6 +21,10 @@ if (!isset($_SESSION['user_email'])) {
 $pageTitle = "My Services - LIFE";
 require_once('includes/head.php'); 
 ?>
+
+<head>
+    <link rel="stylesheet" href="css/services.css"> 
+</head>
 
 <body>
     
@@ -39,32 +49,32 @@ require_once('includes/header_nav.php');
             <!-- Yoga Icon -->
             <div class="item">
                 <a href="yoga_service.php">
-                    <img src="./assets/yoga_icon.png" alt="woman Yoga pose icon">
-                    <h3>Yoga</h3>
+                    <img src="<?php echo htmlspecialchars($serviceDetails[1]['image_path']); ?>" alt="woman Yoga pose icon">
+                    <h3><?php echo htmlspecialchars($serviceDetails[1]['name']); ?></h3>
                 </a>
                 <p>Select your Yoga level and preferences.</p>
             </div>
             <!-- Meditation Icon -->
             <div class="item">
                 <a href="meditation_service.php">
-                    <img src="./assets/meditation_icon.png" alt="woman in Meditation pose">
-                    <h3>Meditation</h3>
+                    <img src="<?php echo htmlspecialchars($serviceDetails[2]['image_path']); ?>" alt="woman in Meditation pose">
+                    <h3><?php echo htmlspecialchars($serviceDetails[2]['name']); ?></h3>
                 </a>
                 <p>Choose the type of meditation that suits you.</p>
             </div>
             <!-- Stretching Icon -->
             <div class="item">
                 <a href="stretching_service.php">
-                    <img src="./assets/stretching_icon.png" alt="woman Stretching">
-                    <h3>Stretching</h3>
+                    <img src="<?php echo htmlspecialchars($serviceDetails[3]['image_path']); ?>" alt="woman Stretching">
+                    <h3><?php echo htmlspecialchars($serviceDetails[3]['name']); ?></h3>
                 </a>
                 <p>Customize your stretching routine.</p>
             </div>
             <!-- Healthy Habits Icon -->
             <div class="item">
                 <a href="healthy_habits_service.php">
-                    <img src="./assets/healthy_icon.png" alt="healthy food">
-                    <h3>Healthy Habits</h3>
+                    <img src="<?php echo htmlspecialchars($serviceDetails[4]['image_path']); ?>" alt="healthy food">
+                    <h3><?php echo htmlspecialchars($serviceDetails[4]['name']); ?></h3>
                 </a>
                 <p>Develop and track your healthy habits.</p>
             </div>

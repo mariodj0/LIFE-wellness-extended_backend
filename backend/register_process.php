@@ -17,12 +17,12 @@ function validateName($name) {
 
 // Function to validate Australian mobile numbers with regex
 function validatePhoneNumber($number) {
-    return preg_match('/^\+61\s?4\d{2}\s?\d{3}\s?\d{3}$/', $number);
+    return preg_match('/^\+61 4\d{2} \d{3} \d{3}$/', $number);
 }
 
 // Function to validate password format with regex
 function validatePassword($password) {
-    return preg_match('/^[A-Z][\w\-]{6,}[0-9]$/', $password);
+    return preg_match('/^(?=.*.{8,})[A-Z][A-Za-z0-9]*[-_][A-Za-z0-9]*\d$/', $password);
 }
 
 // Function to calculate membership fee
@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
 
             // Redirect to welcome page on successful registration
-            header('Location: /~s3917002/wp/a2/welcome.php');
+            header('Location: ../welcome.php');
             exit();
         } catch (PDOException $e) {
             // Handle database errors including duplicate email entry
@@ -145,7 +145,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Redirect back to registration form with errors
-    header('Location: /~s3917002/wp/a2/register.php');
+    header('Location: ../register.php');
     exit();
 }
 ?>

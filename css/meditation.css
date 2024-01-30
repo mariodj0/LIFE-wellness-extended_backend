@@ -1,0 +1,88 @@
+/* Meditation Service Page Specific Styles */
+
+/* Main section customization */
+.meditation-service-form {
+    background-color: #f5faf6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Size and position adjustment for media container */
+.meditation-media-container {
+    margin-top: 20px;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Custom styles for video and audio players */
+.meditation-video-player, .meditation-audio-player {
+    width: 70%;
+}
+
+/* Form customization */
+.meditation-service-form form {
+    margin-top: 20px;
+}
+
+.meditation-option label {
+    display: block;
+    background-color: #dfe6ee;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.meditation-option input[type="radio"] {
+    display: none;
+}
+
+.meditation-option input[type="radio"]:checked + label {
+    background-color: #a4c0e5;
+    color: #fff;
+}
+
+/* Button styling */
+.submit-meditation, .back-button {
+    background-color: #ff8c00; 
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    transition: all 0.3s ease;
+}
+
+.submit-meditation:hover, .back-button:hover {
+    background-color: #e67e22; 
+    transform: scale(1.05); 
+}
+
+/* Form Buttons Container */
+.form-buttons {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .meditation-service-form {
+        max-width: 90%;
+    }
+
+    .meditation-media-container {
+        max-width: 100%;
+    }
+}

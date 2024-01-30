@@ -31,7 +31,7 @@ if (session_status() == PHP_SESSION_NONE) {
             
             <!-- Conditional Display of Login/Logout -->
             <?php if (isset($_SESSION['user_email'])): ?>
-                <li><a href="/~s3917002/wp/a2/backend/logout_process.php" class="login-link">Logout</a></li>
+                <li><a href="../backend/logout_process.php" class="login-link">Logout</a></li>
             <?php else: ?>
                 <li><a href="./login.php" class="login-link">Login</a></li>
             <?php endif; ?>

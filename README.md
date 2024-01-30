@@ -7,7 +7,7 @@
 - **Student Name**: Mario Kweku Djameh
 - **Student ID**: s3917002
 - **live link 1**: `https://titan.csit.rmit.edu.au/~s3917002/wp/a2/index.php`
-- **live link 2**: `https://titan.csit.rmit.edu.au/~s1234567/wp/a2/admin/portal.php`
+- **live link 2**: `https://titan.csit.rmit.edu.au/~s3917002/wp/a2/admin/portal.php`
 
 ## Overview
 Assignment 2 of Web Programming COSC3052 at RMIT University builds upon the LIFE Wellness website from Assignment 1. This iteration focuses on enhancing the website's functionality through PHP backend integration, database management, session handling, and improved user interactivity.
@@ -27,7 +27,7 @@ The primary objective of Assignment 2 is to integrate backend technologies with 
 
 
 ## Installation and Setup
-The website is live at `https://titan.csit.rmit.edu.au/~s3917002/wp/a2/index.php` and at `https://titan.csit.rmit.edu.au/~s1234567/wp/a2/admin/portal.php` for the admin dashboard
+The website is live at `https://titan.csit.rmit.edu.au/~s3917002/wp/a2/index.php` and at `https://titan.csit.rmit.edu.au/~s3917002/wp/a2/admin/portal.php` for the admin dashboard
 
 ## Website Overview
 In addition to the features from assignment 1, The LIFE website now includes several key features:
@@ -53,6 +53,7 @@ In addition to the features from assignment 1, The LIFE website now includes sev
 - `sitemap.php`: Sitemap of the website.
 - `styles.css`: Stylesheet for the website.
 - `validate.js`: JavaScript file for form validation.
+- `see website structure below for full files`
 
 
 ## Technologies Used
@@ -113,7 +114,7 @@ LIFE Wellness Website structure and files
 |-- sitemap.php                 # Sitemap of the website
 |-- styles.css                  # Main stylesheet for the website
 |-- README.md                   # Project documentation and overview
-|-- healthy_service.php         # Page for healthy habits service
+|-- healthy_habits_service.php  # Page for healthy habits service
 |-- meditation_service.php      # Page for meditation service
 |-- myServices.php              # Personalized services page for registered users
 |-- stretching_service.php      # Page for stretching service
@@ -128,6 +129,7 @@ LIFE Wellness Website structure and files
 |-- js/                         # Folder containing JavaScript files
 |   |-- accordion_setup.js      # JavaScript for accordion setup
 |   |-- adjustMainPadding.js    # JavaScript for adjusting main padding
+|   |-- durationTracker.js
 |
 |-- plugin/                     # Folder containing external plugins
 |   |-- accordion.css           # CSS styles for the accordion plugin
@@ -138,10 +140,19 @@ LIFE Wellness Website structure and files
 |   |-- logout_process.php      # Script for handling user logout
 |   |-- register_process.php    # Script for handling user registration
 |   |-- login_process.php       # Script for handling user login
+|   |-- myservice_process.php
+|
 |
 |-- admin/                      # Folder for admin-related files
 |   |-- portal.php              # Admin portal page
 |
 |-- assets/                     # Folder containing all media, images, and icons
 |   |-- [All media files, images, icons, etc.]
+|   
+|-- css/
+|   |-- health.css
+|   |-- meditation.css
+|   |-- services.css
+|   |-- stretching.css
+|   |-- yoga.css
 ```

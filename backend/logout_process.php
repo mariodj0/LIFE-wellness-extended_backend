@@ -6,6 +6,6 @@ session_start();
 session_destroy();
 
 // Redirect the user to the login page.
-header('Location: /~s3917002/wp/a2/login.php');
+header('Location: ../login.php');
 exit();
 ?>

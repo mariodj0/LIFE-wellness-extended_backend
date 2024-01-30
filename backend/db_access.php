@@ -27,4 +27,39 @@ try {
     // If connection fails, catch the error and terminate the script with a message.
     die("Connection failed: " . $e->getMessage());
 }
+
+
+
+function getAllUsers() {
+    global $pdo;
+    $stmt = $pdo->prepare("SELECT email FROM user"); 
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_COLUMN, 0);
+}
+
+function getAllServices_db() {
+    global $pdo;
+    $stmt = $pdo->prepare("SELECT service_id, name FROM service");
+    $stmt->execute();
+    return $stmt->fetchAll();
+}
+
+function getServiceDetails($user, $serviceName) {
+    global $pdo;
+
+    // First, get the service_id from the service name
+    $serviceStmt = $pdo->prepare("SELECT service_id FROM service WHERE name = ?");
+    $serviceStmt->execute([$serviceName]);
+    $service = $serviceStmt->fetch();
+    if (!$service) {
+        return []; // Service not found
+    }
+    $serviceId = $service['service_id'];
+
+    // Now, fetch user service details
+    $stmt = $pdo->prepare("SELECT date_performed, duration_minutes FROM user_service WHERE email = ? AND service_id = ?");
+    $stmt->execute([$user, $serviceId]);
+    return $stmt->fetchAll();
+}
+
 ?>
