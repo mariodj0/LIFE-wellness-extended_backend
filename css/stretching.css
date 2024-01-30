@@ -23,8 +23,10 @@
 
 /* Custom styles for video player */
 .stretching-video-player {
-    width: 100%;
+    width: 70%;
     border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Form customization */
@@ -46,6 +48,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    transition: all 0.3s;
 }
 
 .stretching-option input[type="radio"] {
@@ -53,9 +56,15 @@
 }
 
 .stretching-option input[type="radio"]:checked + label {
-    background-color: #80cbc4; 
+    background-color: #5c967b;
     color: #fff;
 }
+
+.stretching-option label:hover {
+    background-color: #14a899; 
+    color: #084c2d; 
+}
+
 
 /* Button styling */
 .form-buttons {
