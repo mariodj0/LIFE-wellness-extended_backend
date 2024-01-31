@@ -51,10 +51,12 @@ require_once 'includes/head.php';
                 <h2 class="video-title-placeholder"><?= $selectedYogaType ? htmlspecialchars($selectedYogaType) : 'Yoga Session Preview' ?></h2>
                 <div class="yoga-video-container">
                     <!-- Display the selected video or a placeholder video -->
-                    <video class="yoga-video-player" controls>
-                        <source src="<?= $videoPath ? htmlspecialchars($videoPath) : 'path/to/placeholder-video.mp4' ?>" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <?php if ($videoPath): ?>
+                        <video class="yoga-video-player" controls>
+                            <source src="<?= htmlspecialchars($videoPath) ?>" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    <?php endif; ?>
                 </div>
             </div>
 
