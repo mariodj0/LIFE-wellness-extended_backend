@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
-            <a class="navbar-brand" href="#">Admin Dashboard</a>
+            <a class="navbar-brand" href="#">LIFE Admin Dashboard</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div class="container">
         <div class="jumbotron bg-light border">
-            <h1 class="display-4">Welcome to the Admin Dashboard</h1>
+            <h1 class="display-4">Welcome to the LIFE Admin Dashboard</h1>
             <p class="lead">Here you can manage users, services, and view detailed statistics.</p>
         </div>
 
@@ -99,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </section>
 
         <section>
-            <h2>Service Icons</h2>
+            <h2>LIFE Services</h2>
             <div class="row">
                 <?php foreach ($filteredServices as $service): ?>
                     <div class="col-md-3 mb-3 text-center">
@@ -126,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         data: {
                             labels: serviceDetails.map(item => item.date_performed),
                             datasets: [{
-                                label: 'Duration (minutes)',
+                                label: 'Duration (seconds)',
                                 data: serviceDetails.map(item => item.duration_minutes),
                                 backgroundColor: 'rgba(0, 123, 255, 0.5)',
                                 borderColor: 'rgba(0, 123, 255, 1)',
@@ -148,7 +148,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="row">
                 <div class="col-12 col-md">
-                    <small class="d-block mb-3 text-muted">&copy; 2024 Admin Dashboard</small>
+                    <small class="d-block mb-3 text-muted">&copy; 2024 LIFE Admin Dashboard</small>
                 </div>
             </div>
         </footer>
